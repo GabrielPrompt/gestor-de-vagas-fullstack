@@ -7,7 +7,7 @@ Aplicação fullstack para gerenciamento de vagas e candidaturas, com autentica�
 ## 📦 Tecnologias Utilizadas
 
 ### Backend
-- Java 17
+- Java 
 - Spring Boot
 - Spring Security (JWT)
 - JPA / Hibernate
