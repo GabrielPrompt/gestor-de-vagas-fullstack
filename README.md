@@ -91,7 +91,7 @@ Sem essas chaves, o container do backend não irá iniciar corretamente.
 ## COMANDOS PARA RODAR O PROJETO
 ```bash
 # git clone <url-do-repositorio>
-# cd gestor-de-vagas
+# cd gestor-de-vagas-fullstack
 # docker-compose up --build
 ```
 
