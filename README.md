@@ -122,11 +122,9 @@ Permissões:
 - Enviar feedback
 
 ### 👤 Usuário
-Usuário: user  
-Senha: 123
-
-Obs: Você pode criar um **usuário novo** se preferir
-
+-   Utilize a funcionalidade de cadastrar usuario para criar um novo usuario comum.
+( na pagina inicial clique em "Cadastre-se" )
+  
 Permissões:
 - Visualizar vagas disponíveis
 - Candidatar-se a vagas
