@@ -1,0 +1,26 @@
+meta {
+  name: Status da Vaga
+  type: http
+  seq: 13
+}
+
+put {
+  url: http://localhost:8080/candidaturas/354/status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "status": "REPROVADO"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

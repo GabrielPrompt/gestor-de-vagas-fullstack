@@ -1,0 +1,17 @@
+@media (max-width:900px) {
+    .conteiner-imagem{
+        display: none;
+    }
+
+    main{
+        align-content: center;
+        justify-content: center;
+    }
+
+    .conteiner-form{
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 70px ;
+    }
+
+}

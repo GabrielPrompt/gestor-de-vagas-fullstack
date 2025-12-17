@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/responsivo.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <main>
+
+
+        <div class="conteiner-imagem">
+            <div class="logo">
+                <img src="../assets/logo.svg">
+            </div>
+        </div>
+
+        <div class="conteiner-form">
+            <div class="form-content">
+                <div class="form-title">
+                    <p> Bem vindo ao <span id="span-text">Gestor de Vagas Online</span></p>
+                    <h1> Faça login na sua conta </h1>
+                </div>
+                <form id="loginForm">
+                    <label for="email">Username</label> <br>
+                    <input id="input-email" class="input-form" type="text" placeholder="Nome123"> <br>
+
+                    <label for="senha"> Senha </label> <br>
+                    <input id="input-senha" class="input-form" type="password" placeholder="********">
+
+                    <div class="form-radio">
+                        <div class="radio-content">
+                            <input type="radio">
+                            <label for="lembra-de-mim">Lembre de mim</label>
+                
+                        </div>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+
+
+                    <button type="submit" class="button_entrar"> Entrar </button> <br>
+
+                    <button class="button_google">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" height="25px"> Ou faça login com o Google
+                    </button>
+                </form>
+            </div>
+
+            <div class="cadrastro">
+                <p>Não tem uma conta?</p>
+                <a href="../pages/sign.html"> Cadastre-se </a>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="/js/config-db.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

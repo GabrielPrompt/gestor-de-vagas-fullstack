@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --green: #04C35C;
+    --dark: #1A202C;
+    --whiteDark: #F7FAFC;
+    --blue: #2B6CB0;
+    --white: #FFFFFF;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#span-text {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    color: var(--green);
+    margin-left: 7px;
+    font-weight: bold;
+}
+
+.conteiner-imagem{
+    background-color: var(--whiteDark);
+}
+
+.conteiner-imagem, .conteiner-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-form{
+    position: relative;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title p{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form-title h1{
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.input-form{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px  #E8E8E8;
+    margin: 10px 0 10px 0;
+}
+
+input::placeholder {
+    color: #808080;
+}
+
+
+.form-radio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-radio a{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.form-radio label{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button_entrar{
+    background-color: var(--green);
+    width: 347px;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 0;
+    margin: 20px 0 15px 0;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button_google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--dark);
+    color: var(--white);
+    width: 347px;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.button_google:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 20px rgb(44, 44, 44);
+}
+
+.button_entrar:hover{
+    opacity: 0.92;
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 20px rgb(1, 32, 1);
+}
+.cadrastro{
+    display: flex;
+    position: absolute;
+    margin-top: 600px;
+}
+

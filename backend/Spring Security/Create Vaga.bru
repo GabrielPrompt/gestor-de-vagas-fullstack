@@ -1,0 +1,28 @@
+meta {
+  name: Create Vaga
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/vagas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "titulo": "Desenvolvedor Frontend Java",
+    "empresa": "Samsung Brasil",
+    "localizacao": "São Paulo, SP"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

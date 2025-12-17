@@ -1,0 +1,26 @@
+meta {
+  name: Delete Vaga
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:8080/vagas/404
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "content": "Olá mundo do usuario comum!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

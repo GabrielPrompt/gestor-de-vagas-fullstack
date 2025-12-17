@@ -1,0 +1,26 @@
+meta {
+  name: Feedback da Vaga
+  type: http
+  seq: 14
+}
+
+put {
+  url: http://localhost:8080/candidaturas/603/feedback
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "feedback": "Gostamos muito de você, quando podemos marcar uma entrevista?"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

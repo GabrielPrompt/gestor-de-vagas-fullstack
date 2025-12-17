@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page </title>
+    <link rel="stylesheet" href="../../styles/user-page.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="search-box">
+                <img src="../../assets/search.png">
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="../../assets/home.png" alt="home-icon">
+                        <span>Home</span></a>
+                </li>
+                <li><a href="../user/candidaturas.html"><img src="../../assets/jobs.png" alt="home-icon">
+                        <span>Candidaturas</span></a></li>
+                <li><a href="../user/feedbacks.html"><img src="../../assets/message.png" alt="home-icon">
+                        <span>Feedback</span></a></li>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="../../assets/user.png" class="nav-profile-img">
+                <p class="name-user"></p>
+                <a class="sair" href="../../index.html">Sair</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="button-title-vaga">
+        <h1>Vagas que podem ser do seu <span class="text-green">interesse</span></h1>
+    </div>
+
+    <div class="container-atualizar">
+        <div class="content-atualizar">
+            <p>Atualizar</p>
+            <a href="/pages/user/user-page.html">
+                <img class="atualizar" src="../../assets/atualizar.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="vagas-container">
+
+    </div>
+
+    <script src="../../js/user/config.js"></script>
+    <script src="../../js/get-username.js"></script>
+    <script src="../../js/user/user-page.js"></script>
+
+</body>

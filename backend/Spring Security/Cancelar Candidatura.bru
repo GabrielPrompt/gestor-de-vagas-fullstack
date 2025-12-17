@@ -1,0 +1,26 @@
+meta {
+  name: Cancelar Candidatura
+  type: http
+  seq: 10
+}
+
+delete {
+  url: http://localhost:8080/vagas/354/candidatar
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "content": "Desenvolvedor Java"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

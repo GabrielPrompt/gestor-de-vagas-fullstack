@@ -1,0 +1,31 @@
+meta {
+  name: Edit Vaga
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:8080/vagas/704
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "titulo": "Desenvolvedor C++",
+        "empresa": "Mojang - Minecraft",
+        "localizacao": "São Paulo - SP",
+        "salario": "8.500,00",
+        "experiencia": "SENIOR",
+        "modalidade": "HIBRIDO",
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

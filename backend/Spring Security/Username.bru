@@ -1,0 +1,20 @@
+meta {
+  name: Username
+  type: http
+  seq: 16
+}
+
+get {
+  url: http://localhost:8080/me
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

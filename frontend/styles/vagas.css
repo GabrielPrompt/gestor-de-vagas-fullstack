@@ -1,0 +1,115 @@
+.container-form-vaga {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f0f2f5;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.form-criar-vaga {
+    background-color: #ffffff;
+    width: 50vw;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    height: 42px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #04C35C;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn-salvar-vaga {
+    flex: 1;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #04C35C;
+    border: solid 1px #04C35C;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-salvar-vaga:hover {
+    transform: translateY(-3px);
+    background-color: #04C35C;
+    color: #fff;
+}
+
+.btn-cancelar-vaga {
+    flex: 1;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ce3f3f;
+    border: solid 1px #ce3f3f;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cancelar-vaga:hover {
+    transform: translateY(-3px);
+    background-color: #ce3f3f;
+    color: #fff;
+}
+
+.form-group label {
+    color: #04C35C;
+}

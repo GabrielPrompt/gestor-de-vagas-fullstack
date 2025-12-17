@@ -1,0 +1,4 @@
+package project.gestor_de_vagas_api.config.controller.dto;
+
+public record UsuarioMeDto(String nome, String scope) {
+}

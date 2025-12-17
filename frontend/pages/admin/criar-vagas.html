@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page </title>
+    <link rel="stylesheet" href="../../styles/admin-page.css">
+    <link rel="stylesheet" href="../../styles/vagas.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="search-box">
+                <img src="../../assets/search.png">
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="./admin-page.html"><img src="../../assets/home.png" alt="home-icon">
+                        <span>Home</span></a>
+                </li>
+                <li><a href="./candidaturas.html"><img src="../../assets/jobs.png" alt="home-icon">
+                        <span>Candidaturas</span></a></li>
+                <li><a href="./criar-vagas.html" class="active-link"><img class="add-img"
+                            src="../../assets/adicionar.png" alt="home-icon">
+                        <span>Criar Vagas</span></a></li>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="../../assets/user.png" class="nav-profile-img">
+                <p class="name-user text-green"></p>
+                <a class="sair" href="../../index.html">Sair</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="button-title-vaga">
+        <h1>Criardor de <span class="text-green">Vagas</span></h1>
+    </div>
+
+    <main class="container-form-vaga">
+
+        <form class="form-criar-vaga">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="titulo">Título da Vaga</label>
+                    <input type="text" id="titulo" class="input-titulo" placeholder="Ex: Desenvolvedor Java" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" class="input-empresa" placeholder="Nome da empresa" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="localizacao">Localização</label>
+                    <input type="text" id="localizacao" class="input-localizacao" placeholder="Ex: São Paulo - SP"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="salario">Salário</label>
+                    <input type="text" id="salario" class="input-salario" placeholder="Ex: A combinar" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="experiencia">Experiência</label>
+                    <select id="experiencia" class="select-experiencia" required>
+                        <option value="">Selecione</option>
+                        <option value="SEM_EXPERIENCIA">Sem experiência</option>
+                        <option value="JUNIOR">Júnior</option>
+                        <option value="PLENO">Pleno</option>
+                        <option value="SENIOR">Sênior</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalidade">Modalidade</label>
+                    <select id="modalidade" class="select-modalidade" required>
+                        <option value="">Selecione</option>
+                        <option value="PRESENCIAL">Presencial</option>
+                        <option value="REMOTO">Remoto</option>
+                        <option value="HIBRIDO">Híbrido</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-salvar-vaga">
+                    Criar Vaga
+                </button>
+
+                <a href="./admin-page.html" class="btn-cancelar-vaga">
+                    Cancelar
+                </a>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="../../js/user/config.js"></script>
+    <script src="../../js/get-username.js"></script>
+    <script src="../../js/admin/criar-vagas.js"></script>
+
+</body>

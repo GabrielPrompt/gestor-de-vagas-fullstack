@@ -1,0 +1,26 @@
+meta {
+  name: Cadidatar a Vaga
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8080/vagas/353/candidatar
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "content": "Desenvolvedor Java"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
