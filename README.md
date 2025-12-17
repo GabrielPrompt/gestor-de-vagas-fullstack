@@ -113,7 +113,7 @@ http://localhost:8080
 
 ### 👤 Administrador
 Usuário: admin  
-Senha: admin123
+Senha: 123
 
 Permissões:
 - Criar, editar e excluir vagas
@@ -122,7 +122,7 @@ Permissões:
 - Enviar feedback
 
 ### 👤 Usuário
-Usuário: Gabriel  
+Usuário: user  
 Senha: 123
 
 Obs: Você pode criar um **usuário novo** se preferir
